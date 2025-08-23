@@ -1,0 +1,486 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ExploitGUI = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Madeby = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Speed = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Clicktp = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local infjump = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local Madeby_2 = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local noclip = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local Open = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+
+--Properties:
+
+ExploitGUI.Name = "RebirthSystemFixed2"
+ExploitGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ExploitGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ExploitGUI
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.290773541, 0, 0.287999988, 0)
+Frame.Size = UDim2.new(0, 448, 0, 265)
+Frame.Visible = false
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.892857134, 0, 0, 0)
+Close.Size = UDim2.new(0, 48, 0, 43)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0.200000003, 2)
+UICorner.Parent = Close
+
+Madeby.Name = "Made by"
+Madeby.Parent = Frame
+Madeby.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Madeby.BackgroundTransparency = 1.000
+Madeby.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Madeby.Size = UDim2.new(0, 448, 0, 50)
+Madeby.Font = Enum.Font.FredokaOne
+Madeby.Text = "Rezy's Devious GUI | PRIVATE"
+Madeby.TextColor3 = Color3.fromRGB(0, 0, 0)
+Madeby.TextSize = 28.000
+Madeby.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 106, 0)), ColorSequenceKeypoint.new(0.54, Color3.fromRGB(255, 200, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 238, 0))}
+UIGradient.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0650510117, 0, 0.28172344, 0)
+TextLabel.Size = UDim2.new(0, 54, 0, 49)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "16"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextButton.Name = "+"
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 234, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.133928567, 0, 0.467811882, 0)
+TextButton.Size = UDim2.new(0, 48, 0, 44)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "+"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 1.000
+TextButton.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_2.Parent = TextButton
+
+Speed.Name = "Speed"
+Speed.Parent = Frame
+Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Speed.BackgroundTransparency = 1.000
+Speed.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Speed.Position = UDim2.new(0.0114795817, 0, 0.188679233, 0)
+Speed.Size = UDim2.new(0, 102, 0, 29)
+Speed.Font = Enum.Font.FredokaOne
+Speed.Text = "Speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
+
+TextButton_2.Name = "-"
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 234, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextButton_2.Position = UDim2.new(0, 0, 0.467811882, 0)
+TextButton_2.Size = UDim2.new(0, 48, 0, 44)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "-"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_3.Parent = TextButton_2
+
+Clicktp.Name = "Clicktp"
+Clicktp.Parent = Frame
+Clicktp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Clicktp.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Clicktp.Position = UDim2.new(0.276785702, 0, 0.177358493, 0)
+Clicktp.Size = UDim2.new(0, 109, 0, 35)
+Clicktp.Font = Enum.Font.FredokaOne
+Clicktp.Text = "Click Tp"
+Clicktp.TextColor3 = Color3.fromRGB(0, 0, 0)
+Clicktp.TextScaled = true
+Clicktp.TextSize = 14.000
+Clicktp.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_4.Parent = Clicktp
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(255, 106, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 0))}
+UIGradient_2.Parent = Clicktp
+
+infjump.Name = "infjump"
+infjump.Parent = Frame
+infjump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infjump.BorderColor3 = Color3.fromRGB(27, 42, 53)
+infjump.Position = UDim2.new(0.276785702, 0, 0.332075477, 0)
+infjump.Size = UDim2.new(0, 109, 0, 35)
+infjump.Font = Enum.Font.FredokaOne
+infjump.Text = "Inf Jump (R)"
+infjump.TextColor3 = Color3.fromRGB(0, 0, 0)
+infjump.TextScaled = true
+infjump.TextSize = 14.000
+infjump.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_5.Parent = infjump
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(255, 106, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 0))}
+UIGradient_3.Parent = infjump
+
+Madeby_2.Name = "Made by"
+Madeby_2.Parent = Frame
+Madeby_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Madeby_2.BackgroundTransparency = 1.000
+Madeby_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Madeby_2.Position = UDim2.new(0, 0, 0.864150941, 0)
+Madeby_2.Size = UDim2.new(0, 164, 0, 48)
+Madeby_2.Font = Enum.Font.FredokaOne
+Madeby_2.Text = "-version 1.0-2"
+Madeby_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Madeby_2.TextSize = 28.000
+Madeby_2.TextWrapped = true
+
+Fly.Name = "Fly"
+Fly.Parent = Frame
+Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fly.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Fly.Position = UDim2.new(0.59375, 0, 0.177358493, 0)
+Fly.Size = UDim2.new(0, 109, 0, 35)
+Fly.Font = Enum.Font.FredokaOne
+Fly.Text = "Fly (G)"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_6.Parent = Fly
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(255, 106, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 0))}
+UIGradient_4.Parent = Fly
+
+noclip.Name = "noclip"
+noclip.Parent = Frame
+noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+noclip.BorderColor3 = Color3.fromRGB(27, 42, 53)
+noclip.Position = UDim2.new(0.59375, 0, 0.332075477, 0)
+noclip.Size = UDim2.new(0, 109, 0, 35)
+noclip.Font = Enum.Font.FredokaOne
+noclip.Text = "Noclip"
+noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+noclip.TextScaled = true
+noclip.TextSize = 14.000
+noclip.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_7.Parent = noclip
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(255, 106, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 0))}
+UIGradient_5.Parent = noclip
+
+Open.Name = "Open"
+Open.Parent = ExploitGUI
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Open.Position = UDim2.new(0, 0, 0.540799975, 0)
+Open.Size = UDim2.new(0, 78, 0, 34)
+Open.Font = Enum.Font.FredokaOne
+Open.Text = "Open GUI"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0.200000003, 2)
+UICorner_8.Parent = Open
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 128, 0)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(255, 191, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(243, 255, 0))}
+UIGradient_6.Parent = Open
+
+-- Scripts:
+
+local function NRHPB_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.Parent.Visible = false
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(NRHPB_fake_script)()
+local function DXIYSOL_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local label = script.Parent.Parent.TextLabel
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed +5
+		label.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+	end)
+end
+coroutine.wrap(DXIYSOL_fake_script)()
+local function CAXKUTI_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local label = script.Parent.Parent.TextLabel
+	
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed -5
+		label.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+	end)
+end
+coroutine.wrap(CAXKUTI_fake_script)()
+local function TSHM_fake_script() -- Clicktp.LocalScript 
+	local script = Instance.new('LocalScript', Clicktp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		mouse = game.Players.LocalPlayer:GetMouse()
+		tool = Instance.new("Tool")
+		tool.RequiresHandle = false
+		tool.Name = "Click Teleport"
+		tool.Activated:connect(function()
+			local pos = mouse.Hit+Vector3.new(0,2.5,0)
+			pos = CFrame.new(pos.X,pos.Y,pos.Z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end)
+		tool.Parent = game.Players.LocalPlayer.Backpack
+	end)
+end
+coroutine.wrap(TSHM_fake_script)()
+local function UPUGVW_fake_script() -- infjump.LocalScript 
+	local script = Instance.new('LocalScript', infjump)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.infinjump = true
+	
+		local Player = game:GetService("Players").LocalPlayer
+		local Mouse = Player:GetMouse()
+		Mouse.KeyDown:connect(function(k)
+			if _G.infinjump then
+				if k:byte() == 32 then
+					Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+					Humanoid:ChangeState("Jumping")
+					wait(0.1)
+					Humanoid:ChangeState("Seated")
+				end
+			end
+		end)
+	
+		local Player = game:GetService("Players").LocalPlayer
+		local Mouse = Player:GetMouse()
+		Mouse.KeyDown:connect(function(k)
+			k = k:lower()
+			if k == "r" then
+				if _G.infinjump == true then
+					_G.infinjump = false
+				else
+					_G.infinjump = true
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(UPUGVW_fake_script)()
+local function FWGVARI_fake_script() -- Fly.LocalScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		repeat wait() 
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+		local mouse = game.Players.LocalPlayer:GetMouse() 
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer 
+		local torso = plr.Character.Head 
+		local flying = false
+		local deb = true 
+		local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local maxspeed = 400 
+		local speed = 5000 
+	
+		function Fly() 
+			local bg = Instance.new("BodyGyro", torso) 
+			bg.P = 9e4 
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+			bg.cframe = torso.CFrame 
+			local bv = Instance.new("BodyVelocity", torso) 
+			bv.velocity = Vector3.new(0,0.1,0) 
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+			repeat wait() 
+				plr.Character.Humanoid.PlatformStand = true 
+				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+					speed = speed+.5+(speed/maxspeed) 
+					if speed > maxspeed then 
+						speed = maxspeed 
+					end 
+				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+					speed = speed-1 
+					if speed < 0 then 
+						speed = 0 
+					end 
+				end 
+				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				else 
+					bv.velocity = Vector3.new(0,0.1,0) 
+				end 
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+			until not flying 
+			ctrl = {f = 0, b = 0, l = 0, r = 0} 
+			lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+			speed = 0 
+			bg:Destroy() 
+			bv:Destroy() 
+			plr.Character.Humanoid.PlatformStand = false 
+		end 
+		mouse.KeyDown:connect(function(key) 
+			if key:lower() == "g" then 
+				if flying then flying = false 
+				else 
+					flying = true 
+					Fly() 
+				end 
+			elseif key:lower() == "w" then 
+				ctrl.f = 1 
+			elseif key:lower() == "s" then 
+				ctrl.b = -1 
+			elseif key:lower() == "a" then 
+				ctrl.l = -1 
+			elseif key:lower() == "d" then 
+				ctrl.r = 1 
+			end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+			if key:lower() == "w" then 
+				ctrl.f = 0 
+			elseif key:lower() == "s" then 
+				ctrl.b = 0 
+			elseif key:lower() == "a" then 
+				ctrl.l = 0 
+			elseif key:lower() == "d" then 
+				ctrl.r = 0 
+			end 
+		end)
+		Fly()
+	end)
+end
+coroutine.wrap(FWGVARI_fake_script)()
+local function SHFSJW_fake_script() -- noclip.LocalScript 
+	local script = Instance.new('LocalScript', noclip)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local player = game.Players.LocalPlayer
+		local mouse = player:GetMouse()
+		local runservice = game:GetService("RunService")
+		local noclip = false
+	
+		local msg = Instance.new("Message", player.PlayerGui)
+		msg.Text = "Noclip Script Press on 'e' to noclip & 't' to destroy this message! & 'f' to turn off noclip"
+	
+		runservice.Stepped:Connect(function()
+			if noclip then
+				player.Character.Humanoid:ChangeState(11)
+			end
+		end)
+	
+		mouse.KeyDown:Connect(function(key)
+			if key == "t" then
+				msg:Destroy()
+			end
+		end)
+	
+		mouse.KeyDown:Connect(function(key)
+			if key == "e" then
+				noclip = true
+				player.Character.Humanoid:ChangeState(11)
+			end
+		end)
+	
+		mouse.KeyDown:Connect(function(key)
+			if key == "f" then
+				noclip = true
+				player.Character.Humanoid:ChangeState(7)
+			end
+		end)
+	end)
+end
+coroutine.wrap(SHFSJW_fake_script)()
+local function AJDUGM_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame.Visible = true	
+	end)
+end
+coroutine.wrap(AJDUGM_fake_script)()
+local function BZTP_fake_script() -- ExploitGUI.Script 
+	local script = Instance.new('Script', ExploitGUI)
+
+	print("Thanks for using Speed!")
+	
+end
+coroutine.wrap(BZTP_fake_script)()
+local function PWMDIA_fake_script() -- ExploitGUI.Script 
+	local script = Instance.new('Script', ExploitGUI)
+
+	local frame = game.StarterGui.ScreenGui.Frame
+	
+	frame.Draggable = true
+end
+coroutine.wrap(PWMDIA_fake_script)()
