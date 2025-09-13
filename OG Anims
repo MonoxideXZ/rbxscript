@@ -1,0 +1,42 @@
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local function applyAnimations(character)
+    local animate = character:FindFirstChild("Animate")
+    if not animate then return end
+
+    local function setAnim(animObj, animId)
+        if animObj and animObj:FindFirstChildOfClass("Animation") then
+            animObj:FindFirstChildOfClass("Animation").AnimationId = "rbxassetid://" .. animId
+        end
+    end
+
+    setAnim(animate:FindFirstChild("walk"), 507777826)
+    setAnim(animate:FindFirstChild("run"), 507767714)
+    setAnim(animate:FindFirstChild("idle"), 507766951) -- Animation1
+    if animate.idle:FindFirstChild("Animation2") then
+        animate.idle.Animation2.AnimationId = "rbxassetid://507766666"
+    end
+    if animate.idle:FindFirstChild("Animation3") then
+        animate.idle.Animation3.AnimationId = "rbxassetid://507766388"
+    end
+    setAnim(animate:FindFirstChild("jump"), 507765000)
+    setAnim(animate:FindFirstChild("fall"), 507767968)
+    setAnim(animate:FindFirstChild("climb"), 507765644)
+
+    -- Add swim and swim idle animations
+    setAnim(animate:FindFirstChild("swim"), "507784897")       -- Replace "id here" with your swim animation ID
+    setAnim(animate:FindFirstChild("swimidle"), "507785072")   -- Replace "id here" with your swim idle animation ID
+end
+
+-- Hook into character respawn
+LocalPlayer.CharacterAdded:Connect(function(char)
+    char:WaitForChild("Animate", 5)
+    applyAnimations(char)
+end)
+
+-- Apply immediately if character already exists
+if LocalPlayer.Character then
+    applyAnimations(LocalPlayer.Character)
+end
+
